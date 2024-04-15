@@ -50,7 +50,7 @@ const WeatherTable = () => {
           console.error('Error fetching geocode data:', error);
           setLoading(false);
         });
-  },[latitud, longitud, unit]);
+  },[latitud, longitud, unit, cityName]);
 
 
 useEffect(() => {
@@ -78,7 +78,7 @@ useEffect(() => {
 
 
     
-  },[latitud, longitud, unit]);
+  },[latitud, longitud, unit, cityName]);
 
  
   const getWeatherIcon = (weatherCode: number) => {
